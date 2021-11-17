@@ -8,20 +8,57 @@
     position: relative;
 }
 
-.filters div:first-child
+.filterswrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    height: 100%;
+}
+
+.filterswrapper div:first-child
 {
     border-right: 1px solid #DDDDDD;
 }
 
-.lacations:hover .popover
+.amenities, .locations
 {
-    display: block;
-    background-color: #FAFAFA;
-    width: inherit;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
+    width: 25%;
+    line-height: 0px;
+    margin-left: calc(0.5rem, 1.5vw);
+    padding: 10px 0px 10px 10px;
+}
+
+.popover
+{
+    display: none;
+}
+
+.popover ul
+{
     list-style-type: none;
 }
+
+.popover li
+{
+    padding: 0.8em 0px;
+    line-height: 5px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 0.6em 20px;
+    list-style-type: none;
+    margin:24px 0px;
+    line-height: 10px;
+}
+
 
 button
 {
@@ -36,23 +73,11 @@ button
     width: 20%;
     border:0px;
     border-radius: 4px;
-    display: hidden;
 }
 
 button:hover
 {
     opacity: 90%;
-}
-
-.amenities, .locations
-{
-    height: 100%;
-    width: 25%;
-    display: inline-block;
-    line-height: 0px;
-    text-indent: 30px;
-    padding: 10px 0px;
-
 }
 
 h2
@@ -71,7 +96,8 @@ h4
     font-weight: 400;
 }
 
-.popover
+.city
 {
-    display: none;
+    position: relative;
+    right: 25px;
 }

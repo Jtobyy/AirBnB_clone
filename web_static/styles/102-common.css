@@ -2,13 +2,14 @@
 *:before,
 *:after
 {
- box-sizing: border-box;   
+
 }
 
 html, body
 {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 body
 {
@@ -19,4 +20,10 @@ body
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     display: table;
     border-collapse: collapse;
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: 30px auto;
 }

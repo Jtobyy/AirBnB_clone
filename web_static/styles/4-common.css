@@ -2,9 +2,14 @@
 *:before,
 *:after
 {
- box-sizing: border-box;   
+ box-sizing:;   
 }
 
+html, body
+{
+    height: 100%;
+    width: 100%
+}
 body
 {
     margin: 0px;
@@ -12,6 +17,8 @@ body
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: table;
+    border-collapse: collapse;
 }
 
 .container
