@@ -12,6 +12,8 @@ h1
 
 article
 {
+    height: 850px;
+    overflow: auto;
     width: 390px;
     padding: 20px;
     margin: 20px;
@@ -36,6 +38,10 @@ article h2
     font-size: 30px;
 }
 
+.places h1
+{
+    padding: 15px;
+}
 .places ul
 {
     text-align: center;
@@ -77,6 +83,9 @@ article h2
     width: 100px;
     height: 100%;
 }
+
+article .iconlabel
+{}
 
 .guest_icon
 {
@@ -128,14 +137,17 @@ article .amenities
     text-indent: 0px;
     line-height: initial;
     padding: 0px 0px;
+    text-align: left;
 }
 
 .reviews
 {
+    text-align: left;
     margin-top: 40px;
 }
 
-article .amenities h2, .reviews h2
+article .amenities h2,
+.reviews h2
 {
     font-size: 16px;
     border-bottom: 1px solid #DDDDDD;
@@ -149,4 +161,41 @@ article .amenities h2, .reviews h2
 .reviews p
 {
     font-size: 12px;
+    line-height: 0px;
+}
+
+.amenities ul,
+.reviews ul
+{
+    text-align: left;
+}
+
+.amenities ul .pet,
+.amenities ul .tv,
+.amenities ul .wifi,
+.reviews ul li
+{
+    list-style-type: none;
+    background-size: 20px;
+    position: relative;
+    right: 40px;
+    padding: 5px;
+    display:block;
+}
+
+.pet
+{
+    background: url("../images/icon_pets.png") 0px 50% no-repeat;
+}
+.tv
+{
+    background: url("../images/icon_tv.png") 0px 50% no-repeat;
+}
+.wifi
+{
+    background: url("../images/icon_wifi.png") 0px 50% no-repeat;
+}
+.amenities li span
+{
+    margin-left: 20px;
 }

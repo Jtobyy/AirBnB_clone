@@ -7,6 +7,8 @@ h1
 
 article
 {
+    height: 500px;
+    overflow: auto;
     width: 390px;
     padding: 20px;
     margin: 20px;
