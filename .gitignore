@@ -5,3 +5,4 @@ __pycache__/
 # !models/__init__.py (not necessary)
 file.json
 *#
+*~
